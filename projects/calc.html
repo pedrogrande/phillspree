@@ -1,0 +1,52 @@
+<html>
+<head>
+<script>
+function pushButton(buttonValue) {
+          if (buttonValue == 'C') {
+                document.getElementById('screen').value = '';
+            }
+          else {
+                document.getElementById('screen').value += buttonValue;
+            }
+        }
+      function calculate(equation) {
+          var answer = eval(equation);
+          document.getElementById('screen').value = answer;
+        }
+      </script>
+      </head>
+<body>
+<div class="content">
+<div class="button-wrapper">
+<div style="float: left;"><input id="screen" class="textbox" type="text" /></div>
+<ul id="buttons">
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="1" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="2" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="3" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="/" /></li>
+</ul>
+<ul id="buttons">
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="4" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="5" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="6" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="*" /></li>
+</ul>
+<ul id="buttons">
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="7" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="8" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="9" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="-" /></li>
+</ul>
+<ul id="buttons">
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="0" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="." /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="C" /></li>
+  <li><input class="calc" onclick="pushButton(this.value);" type="button" value="+" /></li>
+</ul>
+<ul id="buttons">
+  <li><input class="calc" onclick="calculate(document.getElementById('screen').value);" type="button" value="=" /></li>
+</ul>
+</div>
+</body>
+</html>
+

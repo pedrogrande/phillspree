@@ -1,0 +1,6 @@
+heroku config:add S3_KEY=AKIAID5WZI4VPEXP5APQ S3_SECRET=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 S3_REGION=ap-southeast-2 S3_BUCKET_NAME=thestartupcommunity/images
+
+heroku config:add AWS_ACCESS_KEY_ID=AKIAID5WZI4VPEXP5APQ AWS_SECRET_ACCESS_KEY=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 FOG_REGION=ap-southeast-2 FOG_DIRECTORY=thestartupcommunity FOG_PROVIDER=AWS ASSET_SYNC_GZIP_COMPRESSION=true
+ 
+
+ heroku labs:enable user-env-compile -a tsc003
